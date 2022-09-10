@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="header__wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="header__inner">
+            <button class="header__nav">
+              <img
+                class="header__nav-img"
+                src="./images/menu-icon.svg"
+                alt="menu-icon"
+              />
+            </button>
+            <div class="logo header__logo">
+              <img class="logo__img" src="./images/Logo.png" alt="logo" />
+            </div>
+            <div class="header__search">
+              <div class="header__search-mobile">
+                <button class="header__search-btn">
+                  <img src="./images/search-icon.svg" alt="search-icon" />
+                </button>
+                <input
+                  class="header__search-input"
+                  type="text"
+                  placeholder="Search something here"
+                />
+              </div>
+              <button class="header__search-btn search__btn-left">
+                <img src="./images/search-settings.svg" alt="search-settings" />
+              </button>
+            </div>
+          </div>
+          <div class="header__icons">
+            <div class="header__box">
+              <a class="header__link" href="#">
+                <img
+                  class="header__link-fav"
+                  src="./images/icon-fav.svg"
+                  alt="favorite-icon"
+                />
+              </a>
+              <a class="header__link" href="#">
+                <img
+                  class="header__link-notif"
+                  src="./images/icon-notif.svg"
+                  alt="notification-icon"
+                />
+              </a>
+              <a class="header__link" href="#">
+                <img
+                  class="header__link-settings"
+                  src="./images/icon-setting.svg"
+                  alt="setting-icon"
+                />
+              </a>
+            </div>
+            <a class="header__link-user" href="#">
+              <img
+                class="header__link-user-img"
+                src="./images/user-icon.png"
+                alt="user-icon"
+              />
+            </a>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="container main__container">
+      <main class="main">
+        <div class="sidebar">
+          <div class="by__type">
+            <p class="by__type-title">TYPE</p>
+            <div class="by__type-item">
+              <input class="by__type-input" id="by-type1" type="checkbox" />
+              <label class="by__type-label" for="by-type1"
+                >Sport <span>(10)</span></label
+              >
+            </div>
+            <div class="by__type-item">
+              <input class="by__type-input" id="by-type2" type="checkbox" />
+              <label class="by__type-label" for="by-type2"
+                >SUV <span>(12)</span></label
+              >
+            </div>
+            <div class="by__type-item">
+              <input class="by__type-input" id="by-type3" type="checkbox" />
+              <label class="by__type-label" for="by-type3"
+                >MPV <span>(16)</span></label
+              >
+            </div>
+            <div class="by__type-item">
+              <input class="by__type-input" id="by-type4" type="checkbox" />
+              <label class="by__type-label" for="by-type4"
+                >Sedan <span>(20)</span>
+              </label>
+            </div>
+            <div class="by__type-item">
+              <input class="by__type-input" id="by-type5" type="checkbox" />
+              <label class="by__type-label" for="by-type5"
+                >Coupe <span>(14)</span></label
+              >
+            </div>
+            <div class="by__type-item">
+              <input class="by__type-input" id="by-type6" type="checkbox" />
+              <label class="by__type-label" for="by-type6"
+                >Hatchback <span>(14)</span></label
+              >
+            </div>
+          </div>
+          <div class="by__capacity">
+            <p class="by__capacity-title">CAPACITY</p>
+            <div class="by__capacity-item">
+              <input
+                class="by__capacity-input"
+                id="by-capacity1"
+                type="checkbox"
+              />
+              <label class="by__capacity-label" for="by-capacity1">
+                2 Person <span>(10)</span>
+              </label>
+            </div>
+            <div class="by__capacity-item">
+              <input
+                class="by__capacity-input"
+                id="by-capacity2"
+                type="checkbox"
+              />
+              <label class="by__capacity-label" for="by-capacity2">
+                4 Person <span>(14)</span>
+              </label>
+            </div>
+            <div class="by__capacity-item">
+              <input
+                class="by__capacity-input"
+                id="by-capacity3"
+                type="checkbox"
+              />
+              <label class="by__capacity-label" for="by-capacity3">
+                6 Person <span>(12)</span>
+              </label>
+            </div>
+            <div class="by__capacity-item">
+              <input
+                class="by__capacity-input"
+                id="by-capacity4"
+                type="checkbox"
+              />
+              <label class="by__capacity-label" for="by-capacity4">
+                8 or More <span>(16)</span>
+              </label>
+            </div>
+          </div>
+          <div class="by__price">
+            <p class="by__price-title">PRICE</p>
+            <div class="by__price-range-slider">
+              <input
+                class="by__price-input"
+                type="range"
+                min="0"
+                max="130"
+                value="100"
+                id="range-slider"
+              />
+              <p class="by__price-display">
+                Max. $<span id="display-range"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main__inner">
+          <section class="product">
+            <div class="product__slider-wrapper">
+              <div class="product__slider">
+                <div
+                  class="product__slider-item"
+                  style="background-image: url(./images/slider-1.jpg)"
+                ></div>
+                <div
+                  class="product__slider-item"
+                  style="background-image: url(./images/slider-2.jpg)"
+                ></div>
+                <div
+                  class="product__slider-item"
+                  style="background-image: url(./images/slider-3.jpg)"
+                ></div>
+              </div>
+              <div class="product__slider-thumbs">
+                <div class="product__slider-thumbs-item">
+                  <img src="./images/slider-1.jpg" alt="" />
+                </div>
+                <div class="product__slider-thumbs-item">
+                  <img src="./images/slider-2.jpg" alt="" />
+                </div>
+                <div class="product__slider-thumbs-item">
+                  <img src="./images/slider-3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="product__descr">
+              <div class="product__descr-top">
+                <div class="product__descr-top-inner">
+                  <h3 class="product__descr-title">Nissan GT - R</h3>
+                  <button class="fav-icon"></button>
+                </div>
+                <div class="product__descr-rate-wrapper">
+                  <div class="product__descr-rate">
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star"></div>
+                  </div>
+                  <p class="product__descr-rate-total">440+ Reviewer</p>
+                </div>
+              </div>
+              <p class="product__descr-text">
+                NISMO has become the embodiment of Nissan's outstanding
+                performance, inspired by the most unforgiving proving ground,
+                the "race track".
+              </p>
+              <div class="product__descr-char">
+                <p class="product__descr-char-item">Type Car</p>
+                <p class="product__descr-char-item">Sport</p>
+                <p class="product__descr-char-item">Capacity</p>
+                <p class="product__descr-char-item">2 Person</p>
+                <p class="product__descr-char-item">Steering</p>
+                <p class="product__descr-char-item">Manual</p>
+                <p class="product__descr-char-item">Gasoline</p>
+                <p class="product__descr-char-item">70L</p>
+              </div>
+              <div class="product__descr-inner">
+                <div class="product__descr-price">
+                  <p class="product__descr-new-price">
+                    $80.00/ <span>days</span>
+                  </p>
+                  <s class="product__descr-old-price">$100.00</s>
+                </div>
+                <button class="rent__btn">Rent Now</button>
+              </div>
+            </div>
+          </section>
+          <section class="comments">
+            <h3 class="comments__title">Reviews <span>13</span></h3>
+            <div class="comment">
+              <img
+                class="comment__user-img"
+                src="./images/user-icon-1.png"
+                alt="user-icon"
+              />
+              <div class="comment__inner">
+                <div class="comment__box">
+                  <h6 class="comment__user-name">Alex Stanton</h6>
+                  <p class="comment__user-date">21 July 2022</p>
+                  <p class="comment__user-descr">CEO at Bukalapak</p>
+                  <div class="comment__user-rate">
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star"></div>
+                  </div>
+                </div>
+                <p class="comment__user-text">
+                  We are very happy with the service from the MORENT App. Morent
+                  has a low price and also a large variety of cars with good and
+                  comfortable facilities. In addition, the service provided by
+                  the officers is also very friendly and very polite.
+                </p>
+              </div>
+            </div>
+            <div class="comment">
+              <img
+                class="comment__user-img"
+                src="./images/user-icon-2.png"
+                alt="user-icon"
+              />
+              <div class="comment__inner">
+                <div class="comment__box">
+                  <h6 class="comment__user-name">Alex Stanton</h6>
+                  <p class="comment__user-date">21 July 2022</p>
+                  <p class="comment__user-descr">CEO at Bukalapak</p>
+                  <div class="comment__user-rate">
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star-full"></div>
+                    <div class="rate-star"></div>
+                  </div>
+                </div>
+                <p class="comment__user-text">
+                  We are greatly helped by the services of the MORENT
+                  Application. Morent has low prices and also a wide variety of
+                  cars with good and comfortable facilities. In addition, the
+                  service provided by the officers is also very friendly and
+                  very polite.
+                </p>
+              </div>
+            </div>
+            <button class="comments__all">Show All</button>
+          </section>
+          <section class="recent__car">
+            <div class="recent__car-top">
+              <h4 class="recent__car-title">Recent Car</h4>
+              <a class="recent__car-btn" href="#">View All</a>
+            </div>
+            <div class="recent__car-wrapper recent__car-mobile">
+              <div class="car-item">
+                <div class="car-item-top">
+                  <h6 class="car-item-title">Koenigsegg</h6>
+                  <button class="fav-icon"></button>
+                </div>
+                <p class="car-item-type">Sport</p>
+                <img
+                  class="car-item-img"
+                  src="./images/car-1.png"
+                  alt="car-img"
+                />
+                <div class="car-item-char">
+                  <div class="car-item-gas">
+                    <img src="./images/gas-icon.svg" alt="gas-icon" />
+                    <p>90L</p>
+                  </div>
+                  <div class="car-item-steering">
+                    <img src="./images/steer-icon.svg" alt="steering-icon" />
+                    <p>Manual</p>
+                  </div>
+                  <div class="car-item-capacity">
+                    <img src="./images/capacy-icon.svg" alt="capacity-icon" />
+                    <p>2 People</p>
+                  </div>
+                </div>
+                <div class="car-item-bottom">
+                  <p class="car-item-newprice">$99.00/ <span>day</span></p>
+                  <button class="rent__btn car-item-rent__btn">Rent Now</button>
+                </div>
+              </div>
+
+              <div class="car-item">
+                <div class="car-item-top">
+                  <h6 class="car-item-title">Nissan GT - R</h6>
+                  <button class="fav-icon"></button>
+                </div>
+                <p class="car-item-type">Sport</p>
+                <img
+                  class="car-item-img"
+                  src="./images/car-2.png"
+                  alt="car-img"
+                />
+                <div class="car-item-char">
+                  <div class="car-item-gas">
+                    <img src="./images/gas-icon.svg" alt="gas-icon" />
+                    <p>80L</p>
+                  </div>
+                  <div class="car-item-steering">
+                    <img src="./images/steer-icon.svg" alt="steering-icon" />
+                    <p>Manual</p>
+                  </div>
+                  <div class="car-item-capacity">
+                    <img src="./images/capacy-icon.svg" alt="capacity-icon" />
+                    <p>2 People</p>
+                  </div>
+                </div>
+                <div class="car-item-bottom">
+                  <div class="car-item-price">
+                    <p class="car-item-newprice">$80.00/ <span>day</span></p>
+                    <s class="car-item-oldprice"> $100.00 </s>
+                  </div>
+                  <button class="rent__btn car-item-rent__btn">Rent Now</button>
+                </div>
+              </div>
+
+              <div class="car-item car-item__disable">
+                <div class="car-item-top">
+                  <h6 class="car-item-title">Rolls-Royce</h6>
+                  <button class="fav-icon"></button>
+                </div>
+                <p class="car-item-type">Sport</p>
+                <img
+                  class="car-item-img"
+                  src="./images/car-3.png"
+                  alt="car-img"
+                />
+                <div class="car-item-char">
+                  <div class="car-item-gas">
+                    <img src="./images/gas-icon.svg" alt="gas-icon" />
+                    <p>70L</p>
+                  </div>
+                  <div class="car-item-steering">
+                    <img src="./images/steer-icon.svg" alt="steering-icon" />
+                    <p>Manual</p>
+                  </div>
+                  <div class="car-item-capacity">
+                    <img src="./images/capacy-icon.svg" alt="capacity-icon" />
+                    <p>4 People</p>
+                  </div>
+                </div>
+                <div class="car-item-bottom">
+                  <p class="car-item-newprice">$96.00/ <span>day</span></p>
+                  <button class="rent__btn car-item-rent__btn">Rent Now</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="recomendation__car">
+            <div class="recomendation__car-top">
+              <h4 class="recomendation__car-title">Recomendation Car</h4>
+              <a class="recomendation__car-btn" href="#">View All</a>
+            </div>
+            <div class="recomendation__car-wrapper recomendation__car-mobile">
+              <div class="car-item">
+                <div class="car-item-top">
+                  <h6 class="car-item-title">All New Rush</h6>
+                  <button class="fav-icon"></button>
+                </div>
+                <p class="car-item-type">SUV</p>
+                <img
+                  class="car-item-img"
+                  src="./images/car-4.png"
+                  alt="car-img"
+                />
+                <div class="car-item-char">
+                  <div class="car-item-gas">
+                    <img src="./images/gas-icon.svg" alt="gas-icon" />
+                    <p>70L</p>
+                  </div>
+                  <div class="car-item-steering">
+                    <img src="./images/steer-icon.svg" alt="steering-icon" />
+                    <p>Manual</p>
+                  </div>
+                  <div class="car-item-capacity">
+                    <img src="./images/capacy-icon.svg" alt="capacity-icon" />
+                    <p>6 People</p>
+                  </div>
+                </div>
+                <div class="car-item-bottom">
+                  <div class="car-item-price">
+                    <p class="car-item-newprice">$72.00/ <span>day</span></p>
+                    <s class="car-item-oldprice"> $80.00 </s>
+                  </div>
+                  <button class="rent__btn car-item-rent__btn">Rent Now</button>
+                </div>
+              </div>
+
+              <div class="car-item">
+                <div class="car-item-top">
+                  <h6 class="car-item-title">CR - V</h6>
+                  <button class="fav-icon"></button>
+                </div>
+                <p class="car-item-type">SUV</p>
+                <img
+                  class="car-item-img"
+                  src="./images/car-5.png"
+                  alt="car-img"
+                />
+                <div class="car-item-char">
+                  <div class="car-item-gas">
+                    <img src="./images/gas-icon.svg" alt="gas-icon" />
+                    <p>80L</p>
+                  </div>
+                  <div class="car-item-steering">
+                    <img src="./images/steer-icon.svg" alt="steering-icon" />
+                    <p>Manual</p>
+                  </div>
+                  <div class="car-item-capacity">
+                    <img src="./images/capacy-icon.svg" alt="capacity-icon" />
+                    <p>6 People</p>
+                  </div>
+                </div>
+                <div class="car-item-bottom">
+                  <p class="car-item-newprice">$80.00/ <span>day</span></p>
+                  <button class="rent__btn car-item-rent__btn">Rent Now</button>
+                </div>
+              </div>
+
+              <div class="car-item car-item__disable">
+                <div class="car-item-top">
+                  <h6 class="car-item-title">All New Terios</h6>
+                  <button class="fav-icon"></button>
+                </div>
+                <p class="car-item-type">SUV</p>
+                <img
+                  class="car-item-img"
+                  src="./images/car-6.png"
+                  alt="car-img"
+                />
+                <div class="car-item-char">
+                  <div class="car-item-gas">
+                    <img src="./images/gas-icon.svg" alt="gas-icon" />
+                    <p>90L</p>
+                  </div>
+                  <div class="car-item-steering">
+                    <img src="./images/steer-icon.svg" alt="steering-icon" />
+                    <p>Manual</p>
+                  </div>
+                  <div class="car-item-capacity">
+                    <img src="./images/capacy-icon.svg" alt="capacity-icon" />
+                    <p>6 People</p>
+                  </div>
+                </div>
+                <div class="car-item-bottom">
+                  <p class="car-item-newprice">$74.00/ <span>day</span></p>
+                  <button class="rent__btn car-item-rent__btn">Rent Now</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="container footer__wrapper">
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__quote">
+            <div class="logo">
+              <img class="logo__img" src="./images/Logo.png" alt="logo" />
+            </div>
+            <p class="footer__quote-text">
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </p>
+          </div>
+          <div class="footer__inner">
+            <div class="footer__about">
+              <h3 class="footer__about-title">About</h3>
+              <ul class="footer__about-list">
+                <li class="footer__about-item">
+                  <a class="footer__about-link" href="#">How it works</a>
+                </li>
+                <li class="footer__about-item">
+                  <a class="footer__about-link" href="#">Featured</a>
+                </li>
+                <li class="footer__about-item">
+                  <a class="footer__about-link" href="#">Partnership</a>
+                </li>
+                <li class="footer__about-item">
+                  <a class="footer__about-link" href="#">Bussiness Relation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__community">
+              <h3 class="footer__community-title">Community</h3>
+              <ul class="footer__community-list">
+                <li class="footer__community-item">
+                  <a class="footer__community-link" href="#">Events</a>
+                </li>
+                <li class="footer__community-item">
+                  <a class="footer__community-link" href="#">Blog</a>
+                </li>
+                <li class="footer__community-item">
+                  <a class="footer__community-link" href="#">Podcast</a>
+                </li>
+                <li class="footer__community-item">
+                  <a class="footer__community-link" href="#">Invite a friend</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__socials">
+              <h3 class="footer__socials-title">Socials</h3>
+              <ul class="footer__socials-list">
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="#">Discord</a>
+                </li>
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="#">Instagram</a>
+                </li>
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="#">Twitter</a>
+                </li>
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="#">Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copiright">©2022 MORENT. All rights reserved</p>
+          <div class="footer__docs">
+            <a class="footer__docs-link" href="#">Privacy & Policy</a>
+            <a class="footer__docs-link" href="#">Terms & Condition</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
